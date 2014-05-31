@@ -1,0 +1,15 @@
+# Site settings
+title: CITguy
+email: rhino.citguy+blog@gmail.com
+email_display: Email
+description: "Code Bytes and Insights"
+baseurl: ""
+url: "http://citguy.com"
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+
+highlighter: pygments
+paginate: 5
+timezone: America/Chicago

@@ -1,0 +1,36 @@
+---
+layout: default
+---
+<div class="post">
+  <h1>{{ page.title }}</h1>
+  <span class="post-date">{{ page.date | date_to_string }}</span>
+  {{ content }}
+</div>
+
+<div class="related">
+  <h2>Related Posts</h2>
+  <ul class="related-posts">
+    {% for post in site.posts %}
+      {% assign match = false %}
+      {% for category in post.categories %}
+        {% if page.categories contains category %}
+          {% assign match = true %}
+        {% endif %}
+      {% endfor %}
+
+      {% if page.title == post.title %}
+        {% assign match = false %}
+      {% endif %}
+      {% if match %}
+        <li>
+          <h3>
+            <a href="{{ post.url }}">
+              {{ post.title }}
+              <small>{{ post.date | date_to_string }}</small>
+            </a>
+          </h3>
+        </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+</div>

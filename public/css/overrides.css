@@ -1,0 +1,22 @@
+.masthead a, .masthead a:visited {
+  color: #fff;
+}
+body,
+.quicksand {
+  font-family: "Quicksand", "Open Sans", Helvetica, Arial, sans-serif;
+}
+code,
+pre,
+.source-code {
+  font-family: "Source Code Pro", Menlo, Monaco "Courier New", monospace;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.masthead h1,
+.nova-flat{
+  font-family: "Nova Flat", "Abril Fatface", serif;
+}

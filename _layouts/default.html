@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <!--link href="htp://gmpg.org/xfn/11" rel="profile"-->
+    <meta name="description" content="{{ site.description }}">
+
+    <title>
+      {% if page.title %}{{ page.title }} &middot; {% endif %}
+      {{ site.tagline }}
+    </title>
+
+    <!-- CSS -->
+    <!--link rel="stylesheet" href="/css/main.css"-->
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Quicksand:300,400,700|Nova+Flat|Source+Code+Pro:300,500|Open+Sans:300,400italic,400,600,700">
+    <link rel="stylesheet" href="/public/css/font-awesome.css">
+    <link rel="stylesheet" href="/public/css/hyde.css">
+    <link rel="stylesheet" href="/public/css/syntax.css">
+    <link rel="stylesheet" href="/public/css/overrides.css">
+
+
+    <!-- Icons -->
+    <!--link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/touch-icon-144-precomposed.png"-->
+    <link rel="shortcut icon" href="public/favicon.png">
+
+    <!-- RSS -->
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+  </head>
+  <body>
+    <header class="masthead">
+      <div class="masthead-inner">
+        <h1>{{ site.title }}</h1>
+        <p class="lead">{{ site.description }}</p>
+        <div class="colophon">
+          <ul class="colophon-links">
+            <li><a href="/">Home</a></li>
+            {% for page in site.pages %}
+              <li><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
+            {% endfor %}
+          </ul>
+          <p>&copy; 2014. {{ site.author.name }} All rights reserved.</p>
+          <p style="font-size: 1.2em;">
+            <a href="http://github.com/CITguy" target="_blank" class="fa fa-github"></a>
+            <a href="http://twitter.com/CITguy" target="_blank" class="fa fa-twitter"></a>
+            <a href="http://jsfiddle.net/user/CITguy/" target="_blank" class="fa fa-jsfiddle"></a>
+            <a href="http://stackoverflow.com/users/1014689/citguy" target="_blank" class="fa fa-stack-overflow"></a>
+            <!--
+            <a href="http://www.pinterest.com/citguy" target="_blank" class="fa fa-pinterest"></a>
+            <a href="http://steamcommunity.com/id/citguy" target="_blank" class="fa fa-steam-square"></a>
+            <a href="http://citguy.deviantart.com/" target="_blank" class="fa fa-deviantart"></a>
+            -->
+          </p>
+        </div>
+      </div>
+    </header>
+    <div class="content container">
+      {{ content }}
+    </div>
+  </body>
+</html>
