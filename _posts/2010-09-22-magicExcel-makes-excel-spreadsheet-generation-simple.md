@@ -13,7 +13,7 @@ Wait! What?
 
 Yes, that's right! All you need to create sleek spreadsheets is knowledge of HTML tables.
 
-Don't believe me, check it out for yourself at [http://magicexcel.riaforge.org](http://magicexcel.riaforge.org).
+Don't believe me, check it out for yourself at <a href="http://magicexcel.riaforge.org" target="_blank">http://magicexcel.riaforge.org</a>.
 
 {% include signature.md %}
 
