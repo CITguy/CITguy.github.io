@@ -20,3 +20,15 @@ h6,
 .nova-flat{
   font-family: "Nova Flat", "Abril Fatface", serif;
 }
+
+.highlight pre {
+  border: 1px solid #ccc;
+  /* auto scroll code if too wide */
+  overflow-x: scroll;
+  white-space: pre;
+  word-wrap: normal;
+}
+.highlight pre code {
+  /* auto scroll code if too wide */
+  white-space: inherit;
+}
