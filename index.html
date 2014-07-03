@@ -9,15 +9,13 @@ layout: default
       <span class="post-date">{{ post.date | date_to_string }}</span>
       <span class="post-tags">
         {% for tag in post.tags %}
-          <span class="post-tag">{{tag}}</a>
+          <span class="post-tag">{{tag}}</span>
         {% endfor %}
       </span>
-      <!--{{ post.content }}-->
     </div>
   {% endfor %}
 </div>
 
-<hr />
 <!-- pagination links -->
 <div class="pagination">
   {% if paginator.next_page %}

@@ -38,8 +38,36 @@ a.fa:hover {
   color: #0f0;
 }
 
-.post-tags {}
+.content, body {
+  background-color: #fff;
+}
+.container {
+  width: 60%;
+  margin-left: 30%;
+  margin-right: 10%;
+}
+.post {
+  border-color: #ccc;
+  border-style: solid;
+  border-width: 1px 1px 3px 1px;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 20px;
+  background-color: #fff;
+}
+@media (min-width: 990px) {
+  .post {
+    margin-bottom: 30px;
+  }
+}
+.post-tags {
+}
 .post-tags .post-tag {
-  color: #c00;
   font-weight: bold;
+  background-color: #c00;
+  color: #fff;
+  padding: 0px 3px;
+  border-radius: 4px;
+  display: inline-block;
+  font-size: 0.8em;
 }
