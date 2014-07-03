@@ -1,8 +1,10 @@
 ---
 layout: post
-title: "magicExcel Makes Excel Spreadsheet Generation Simple"
+title: "OMG! magicExcel"
 date: 2010-09-22 12:00:00
-categories: coldfusion
+category: coldfusion
+tags:
+- coldfusion
 ---
 
 Have you ever had trouble wading through the ColdFusion 9 documentation pertaining to the new CFSpreadsheet Functions? Have you ever gotten frustrated with generating Excel documents with ColdFusion? Are you tired of boring spreadsheets? Don't you wish there was an easier way to do it all?

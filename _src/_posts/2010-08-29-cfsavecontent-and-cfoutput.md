@@ -1,8 +1,11 @@
 ---
 layout: post
-title: "cfsavecontent and cfoutput gotchas"
+title: "Gotchas: cfsavecontent and cfoutput"
 date: 2010-08-29 12:00:00
-categories: coldfusion
+category: coldfusion
+tags:
+- coldfusion
+- gotchas
 ---
 
 I was playing around with cfsavecontent to generate dynamic HTML variable values for use as an argument to a function when I came across an interesting behavior regarding the tag. The issue I ran was that Coldfusion was giving me an error that the variable saved by cfsavecontent was not defined when I was trying to output the value. Take a look at the code below:

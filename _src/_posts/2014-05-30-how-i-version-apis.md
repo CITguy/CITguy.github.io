@@ -1,12 +1,12 @@
 ---
 layout: post
-title: "Easy API Versioning using Vendor-Prefixed MIME Types and Rails Action Pack Variants"
+title: "How I Version APIs"
 date: 2014-05-30 23:37:00
-categories: apis
+category: apis
 tags:
 - ruby
 - rails
-- api
+- apis
 ---
 
 Sick of having API versioned paths in your rails app? Try using Action Pack Variants instead.

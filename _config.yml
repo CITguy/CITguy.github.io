@@ -2,7 +2,7 @@
 title: CITguy
 email: rhino.citguy+blog@gmail.com
 email_display: Email
-description: "Code Bytes and Insights"
+description: "DIY Coder"
 baseurl: ""
 url: "http://citguy.com"
 
@@ -13,3 +13,5 @@ permalink: pretty
 highlighter: pygments
 paginate: 5
 timezone: America/Chicago
+
+source: _src

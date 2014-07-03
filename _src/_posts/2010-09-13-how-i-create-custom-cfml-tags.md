@@ -1,8 +1,10 @@
 ---
 layout: post
-title: "Creating Custom Tags with Flexible Closings"
+title: "How I Create Custom CFML Tags"
 date: 2010-09-13 12:00:00
-categories: coldfusion
+category: coldfusion
+tags:
+- coldfusion
 ---
 
 While I was cleaning up some code in a portal of ours, I realized that I could condense some of the code by combining a variable assignment with a custom tag attribute assignment.

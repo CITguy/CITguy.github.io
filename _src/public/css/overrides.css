@@ -18,7 +18,8 @@ h5,
 h6,
 .masthead h1,
 .nova-flat{
-  font-family: "Nova Flat", "Abril Fatface", serif;
+  /*font-family: "Nova Flat", "Abril Fatface", serif;*/
+  font-family: "Lusitana", "Abril Fatface", serif;
 }
 
 .highlight pre {
@@ -35,4 +36,10 @@ h6,
 a.fa:hover {
   text-decoration: none;
   color: #0f0;
+}
+
+.post-tags {}
+.post-tags .post-tag {
+  color: #c00;
+  font-weight: bold;
 }
