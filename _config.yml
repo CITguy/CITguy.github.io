@@ -13,5 +13,3 @@ permalink: pretty
 highlighter: pygments
 paginate: 5
 timezone: America/Chicago
-
-source: _src
