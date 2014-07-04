@@ -1,21 +1,25 @@
 @import "http://fonts.googleapis.com/css?family=Quicksand:300,400,700|Lusitana|Source+Code+Pro:300,500|Open+Sans:300,400italic,400,600,700";
 @import "font-awesome.css";
 @import "hyde.css";
-@import "zenburn.css";
 /*@import "syntax.css";*/
-.masthead a,
-.masthead a:visited {
-  color: #fff;
+@import "zenburn.css";
+
+.masthead {
+  a {
+    &, &:visited {
+      color: #fff;
+    }
+  }
 }
-body,
-.quicksand {
+
+body, .quicksand {
   font-family: "Quicksand", "Open Sans", Helvetica, Arial, sans-serif;
 }
-code,
-pre,
-.source-code {
+
+code, pre, .source-code {
   font-family: "Source Code Pro", Menlo, Monaco "Courier New", monospace;
 }
+
 h1,
 h2,
 h3,
@@ -23,27 +27,31 @@ h4,
 h5,
 h6,
 .masthead h1,
-.nova-flat {
+.nova-flat{
   /*font-family: "Nova Flat", "Abril Fatface", serif;*/
   font-family: "Lusitana", "Abril Fatface", serif;
 }
-.highlight pre {
-  border: 1px solid #ccc;
-  /* auto scroll code if too wide */
-  overflow-x: scroll;
-  white-space: pre;
-  word-wrap: normal;
+
+.highlight {
+  pre {
+    border: 1px solid #ccc;
+    /* auto scroll code if too wide */
+    overflow-x: scroll;
+    white-space: pre;
+    word-wrap: normal;
+    code {
+      /* auto scroll code if too wide */
+      white-space: inherit;
+    }
+  }
 }
-.highlight pre code {
-  /* auto scroll code if too wide */
-  white-space: inherit;
-}
+
 a.fa:hover {
   text-decoration: none;
   color: #0f0;
 }
-.content,
-body {
+
+.content, body {
   background-color: #fff;
 }
 .container {
@@ -60,6 +68,7 @@ body {
   margin-bottom: 20px;
   background-color: #fff;
 }
+
 @media (min-width: 990px) {
   .post {
     margin-bottom: 30px;
@@ -68,12 +77,15 @@ body {
     font-size: 0.9em;
   }
 }
-.post-tags .post-tag {
-  font-weight: bold;
-  background-color: #c00;
-  color: #fff;
-  padding: 0px 3px;
-  border-radius: 4px;
-  display: inline-block;
-  font-size: 0.8em;
+
+.post-tags {
+  .post-tag {
+    font-weight: bold;
+    background-color: #c00;
+    color: #fff;
+    padding: 0px 3px;
+    border-radius: 4px;
+    display: inline-block;
+    font-size: 0.8em;
+  }
 }
